@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/open_in"
+        android:textSize="@dimen/text_size_medium"/>
+
+    <ImageView
+        android:id="@+id/chat"
+        style="@style/image"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_chat_black_24px"
+        app:layout_constraintTop_toBottomOf="@+id/title"/>
+
+    <TextView
+        style="@style/text"
+        android:text="@string/chat"
+        app:layout_constraintLeft_toRightOf="@id/chat"
+        app:layout_constraintTop_toBottomOf="@+id/title"/>
+
+
+    <ImageView
+        style="@style/image"
+        android:id="@+id/email"
+        android:src="@drawable/ic_email_black_24px"
+        app:layout_constraintTop_toBottomOf="@+id/chat"
+        android:contentDescription="@null"/>
+
+    <TextView
+        style="@style/text"
+        android:text="@string/email"
+        app:layout_constraintLeft_toRightOf="@id/email"
+        app:layout_constraintTop_toBottomOf="@+id/chat"/>
+
+    <ImageView
+        android:id="@+id/phone"
+        style="@style/image"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_phone_black_24px"
+        app:layout_constraintTop_toBottomOf="@+id/email"/>
+
+    <TextView
+        style="@style/text"
+        android:text="@string/Phone"
+        app:layout_constraintLeft_toRightOf="@id/phone"
+        app:layout_constraintTop_toBottomOf="@+id/email"/>
+</android.support.constraint.ConstraintLayout>
